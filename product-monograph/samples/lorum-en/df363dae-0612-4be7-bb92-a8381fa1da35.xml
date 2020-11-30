@@ -1645,7 +1645,8 @@
                                     <id root="b9db4ce0-3f46-434a-bd7b-4a3e010adaad"/>
                                     <code code="pi01.1" codeSystem="2.16.840.1.113883.2.20.6.60"
                                         displayName="1.1 Pediatrics"/>
-                                    <title>1.1 Pediatrics</title>
+<!--                                    <title>1.1 Pediatrics</title> -->
+                                    <title>&#160;</title>
                                     <text>
                                         <paragraph>[One of the following or similar statements
                                             should be used:]</paragraph>
@@ -1678,7 +1679,8 @@
                                     <id root="b9db4be0-3f46-43fa-bd7b-4a3e010adaad"/>
                                     <code code="pi01.2" codeSystem="2.16.840.1.113883.2.20.6.60"
                                         displayName="1.2 Geriatrics"/>
-                                    <title>1.2 Geriatrics</title>
+<!--                                    <title>1.2 Geriatrics</title> -->
+                                    <title> </title>
                                     <text>
                                         <paragraph>[One of the following or similar statements may
                                             be used:]</paragraph>

@@ -130,7 +130,7 @@
 		<li class="nav-item">
 			<a href="#{$unique-subsection-id}" class="nav-link">
 				<!-- This conditional should never be applied to non-draft SPL documents -->
-				<xsl:if test="not(normalize-space(v3:title))">
+				<xsl:if test="not(normalize-space(translate(v3:title, '&#160;', ' ')))">
 					<span style="color:red;">&lt;&lt;MISSING INFORMATION&gt;&gt;</span>
 				</xsl:if>
 				<xsl:value-of select="v3:title"/>				
