@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "6e7b6eab-72a8-4a21-9cde-e61d5cb7015e",
+		"name": "CVT-PNS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "alive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/alive",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"alive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices (404)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/count",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/count/en",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/count/en",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"count",
+						"en"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/count/fr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/count/fr",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"count",
+						"fr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/reload (jsondb only)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/reload",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"reload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token with data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"bookmarks\": [\r\n            \"15\",\r\n            \"16\"\r\n        ],\r\n        \"language\": \"en\",\r\n        \"notifications\": {\r\n            \"enabled\": true,\r\n            \"newProducts\": true,\r\n            \"bookmarkedProducts\": true\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token.:language",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx.en",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx.en"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token.:language",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx.en",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx.en"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices/:token.:language with data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"bookmarks\": [\r\n            \"15\",\r\n            \"16\"\r\n        ],\r\n        \"notifications\": {\r\n            \"enabled\": true,\r\n            \"newProducts\": true,\r\n            \"bookmarkedProducts\": false\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/devices/xxxxxxxxxxxxxxxxxxxxxx.en",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"devices",
+						"xxxxxxxxxxxxxxxxxxxxxx.en"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notifications/:token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/notifications/xxxxxxxxxxxxxxxxxxxxxx",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"notifications",
+						"xxxxxxxxxxxxxxxxxxxxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pn to all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"all\",\r\n    \"title\": \"hello\",\r\n    \"body\": \"world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pn to en",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"en\",\r\n    \"title\": \"hello\",\r\n    \"body\": \"world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pn to fr",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"fr\",\r\n    \"title\": \"Bonjour\",\r\n    \"body\": \"Mon ami!\",\r\n    \"data\": {\r\n        \"messageType\": \"productUpdate\",\r\n        \"products\": [\r\n            \"15\",\r\n            \"16\"\r\n        ],\r\n        \"link\": \"https://vaccin-covid.canada.ca/\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pn to one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\",\r\n    \"title\": \"hello\",\r\n    \"body\": \"world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pn to many",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": [\r\n        \"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\",\r\n        \"ExponentPushToken[yyyyyyyyyyyyyyyyyyyyyy]\",\r\n        \"ExponentPushToken[zzzzzzzzzzzzzzzzzzzzzz]\"\r\n    ],\r\n    \"title\": \"hello\",\r\n    \"body\": \"world\",\r\n        \"data\": {\r\n            \"messageType\": \"productUpdate\",\r\n            \"products\": [\r\n                \"15\",\r\n                \"16\"\r\n            ]\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/send pns with products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"to\": \"en\",\r\n        \"title\": \"Hello\",\r\n        \"body\": \"World!\",\r\n        \"data\": {\r\n            \"messageType\": \"productUpdate\",\r\n            \"products\": [\r\n                \"15\",\r\n                \"16\"\r\n            ]\r\n        }\r\n    },\r\n    {\r\n        \"to\": \"fr\",\r\n        \"title\": \"Bonjour\",\r\n        \"body\": \"Mon ami!\",\r\n        \"data\": {\r\n            \"messageType\": \"productUpdate\",\r\n            \"products\": \"16\"\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/send",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "push/read/receipts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/push/read/receipts",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"push",
+						"read",
+						"receipts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
